@@ -11,11 +11,11 @@ public class app {
 
 
     void run() {
-
+        int lastId=1;
         System.out.println("==게시판 앱==");
 
         while (true) {
-            System.out.printf("명령)");
+            System.out.println("명령)");
             String command = sc.nextLine().trim();
 
             if (command.equals("종료")) {
@@ -30,6 +30,8 @@ public class app {
                 String subjext = sc.nextLine().trim();
                 System.out.print("내용 :");
                 String content = sc.nextLine().trim();
+                System.out.printf("%d번 게시물이 출력되었습니다.",lastId);
+                lastId++;
 
 
 
